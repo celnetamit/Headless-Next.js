@@ -13,7 +13,7 @@ import SEO from '../components/SEO';
 import Header from '../components/Header';
 
 export async function getStaticProps() {
-  const res = await fetch('https://publications.stmjournals.com/wp-json/wp/v2/posts?_embed');
+  const res = await fetch('https://journals.stmjournals.com/wp-json/wp/v2/posts?_embed');
   const posts = await res.json();
 
   return {
